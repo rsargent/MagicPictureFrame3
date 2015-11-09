@@ -37,7 +37,7 @@ def getPhotos(username, albumid, authkey):
 
 
 def endingToday(username, albumId, authKey):
-    startDate = datetime.date(2012, 10, 14)
+    startDate = datetime.date(2013, 2, 14)
     now = datetime.datetime.now(pytz.timezone('US/Eastern')).date()
     ndays = (now - startDate).days
 
