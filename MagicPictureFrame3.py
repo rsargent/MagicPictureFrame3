@@ -47,6 +47,7 @@ def endingToday(username, albumId, authKey):
 class EndingTodayJson(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'application/json'
+        self.response.headers.add_header('Access-Control-Allow-Origin', '*')
 
         username = 'brian.sargent.nj'
         albumId = '5661873495373261201'
