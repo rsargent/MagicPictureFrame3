@@ -4,5 +4,11 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /
+  static_files: sgt.html
+  upload: sgt.html
+- url: /sgt.html
+  static_files: sgt.html
+  upload: sgt.html
 - url: /.*
   script: MagicPictureFrame3.app
